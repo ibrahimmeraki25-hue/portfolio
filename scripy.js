@@ -564,6 +564,26 @@ document.querySelectorAll('.social-link').forEach(link => {
     });
 });
 
+// Floating CV Button - Show after scrolling
+const cvButton = document.querySelector('.cv-button');
+if (cvButton) {
+    // Show button after scrolling 300px
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            cvButton.classList.add('show');
+        } else {
+            cvButton.classList.remove('show');
+        }
+    });
+    
+    // Track CV download clicks
+    cvButton.addEventListener('click', function() {
+        trackEvent('cv_download', {
+            source: 'floating_button'
+        });
+    });
+}
+
 // Export functions for potential use by other scripts
 window.PortfolioApp = {
     showNotification,

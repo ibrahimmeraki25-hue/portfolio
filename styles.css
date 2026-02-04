@@ -1254,3 +1254,86 @@ a:focus {
         padding: var(--spacing-lg) 0;
     }
 }
+
+/* Floating CV Button */
+.cv-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #8B5CF6, #EC4899);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+    transition: all 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cv-button.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cv-button i {
+    color: white;
+    font-size: 20px;
+}
+
+.cv-button:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
+    background: linear-gradient(135deg, #9B6CF7, #F059A9);
+}
+
+.cv-button:active {
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cv-button {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cv-button i {
+        font-size: 18px;
+    }
+    
+    .cv-button:hover {
+        transform: translateY(-3px) scale(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-button {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .cv-button i {
+        font-size: 16px;
+    }
+}
