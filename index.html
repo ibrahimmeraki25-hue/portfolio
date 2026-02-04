@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim ALjboor AL Majali - Front-End Developer</title>
+    <meta name="description" content="Front-End Developer creating beautiful, responsive web experiences with modern technologies">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">IM</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search" id="searchInput">
+                    <i class="fas fa-search" onclick="performSearch()"></i>
+                </div>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="wave-patterns">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+                <div class="wave wave-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ibrahim ALjboor AL Majali</h1>
+                <p class="hero-description">
+                    Front-End Developer<br>
+                    I build landing pages, portfolios, and web experiences with a strong focus on UI, UX, and conversion.
+                </p>
+                <button class="cta-button" onclick="scrollToProjects()">VIEW MY WORK</button>
+            </div>
+            
+            <div class="hero-image">
+                <img src="picture/449785160_2861088640716084_7913084113126080607_n.jpg" alt="Ibrahim ALjboor AL Majali" class="hero-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate front-end developer with a keen eye for design and a commitment to creating exceptional user experiences. I specialize in building responsive, accessible, and performant web applications using modern technologies.</p>
+                    <p>With a strong foundation in HTML, CSS, and JavaScript, I bring designs to life and transform ideas into functional, beautiful websites that users love.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="picture/p1.png" alt="FC Barcelona Home Jersey 2024/2025" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">FC Barcelona Home Jersey 2024/2025</h3>
+                        <p class="project-description">Official home jersey designed for true Barcelona fans.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ibrahimmeraki25-hue.github.io/Barcelona_FC/" target="_blank" class="btn btn-secondary">Live Demo</a>
+                            <a href="https://github.com/ibrahimmeraki25-hue/Barcelona_FC" target="_blank" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="picture/p2.png" alt="BMW X3 2026 Experience" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BMW X3 2026 Experience</h3>
+                        <p class="project-description">Discover the future of luxury SUVs. Join us for the exclusive launch of the BMW X3 2026, featuring revolutionary electric performance, cutting-edge design, and unparalleled driving dynamics.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ibrahimmeraki25-hue.github.io/Event_Funnel/" target="_blank" class="btn btn-secondary">Live Demo</a>
+                            <a href="https://github.com/ibrahimmeraki25-hue/Event_Funnel" target="_blank" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="picture/p3.png" alt="Halaweh restaurants" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Halaweh restaurants</h3>
+                        <p class="project-description">A family-friendly Arabic restaurant in Khalda - Amman. Offering an exceptional Arabic dining experience with a warm family atmosphere.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ibrahimmeraki25-hue.github.io/Halaweh-restaurants-/" target="_blank" class="btn btn-secondary">Live Demo</a>
+                            <a href="https://github.com/ibrahimmeraki25-hue/Halaweh-restaurants-" target="_blank" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="picture/p4.png" alt="Restaurant Management System" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Restaurant Management System</h3>
+                        <p class="project-description">Order your favorite meals in seconds. Browse the menu, customize your order, and see your total update in real time. Fast, simple, and delicious.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ibrahimmeraki25-hue.github.io/Restaurant-Management-System/" target="_blank" class="btn btn-secondary">Live Demo</a>
+                            <a href="https://github.com/ibrahimmeraki25-hue/Restaurant-Management-System" target="_blank" class="btn btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ibrahim.meraki25@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+962797720652</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>KARAK | JORDAN</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/ibrahimmeraki25-hue" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ibrahim-al-majali-524a271b5" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1FAaZff9An/" target="_blank" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ibrahiim.almajali02?igsh=ZTJ5NXQ0NTc3d2xs" target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ibrahim ALjboor AL Majali. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripy.js"></script>
+</body>
+</html>
